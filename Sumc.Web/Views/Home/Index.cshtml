@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Title</title>
+    </head>
+    <body>
+        <div>
+            <ol>
+                <li>
+                    @if (ViewBag.AllUsers != null) {
+                        @ViewBag.AllUsers[0].UserName; <br />
+                        @ViewBag.AllUsers[0].Email;
+                    }
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>
